@@ -8,14 +8,14 @@ layout: default
 							<div class="row justify-content-center">
 								<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
 									<div class="streamer-profile-pic">
-										<img src="{{ site.image_path | prepend: site.url }}/{{ page.name }}-profile.png">
+										<img src="{{ site.image_path | prepend: site.url }}/{{ page.name | downcase}}-profile.png">
 									</div>
 									<h1 class="streamer-name"><a href="{{ page.twitch }}" target="_blank">{{ page.name }}</a></h1>
 								</div>
 
 								<div class="clip col-xl-6 col-lg-10 col-md-12 col-sm-12">
 									<a class="clip-link" href="{{ page.clip }}" target="_blank">
-										<img src="{{ site.image_path | prepend: site.url }}{{ page.name }}.jpg">
+										<img src="{{ site.image_path | prepend: site.url }}{{ page.name | downcase}}.jpg">
 										<video loop autoplay muted="muted">
 											<source src="{{ site.clip_path | prepend: site.url }}{{ page.name | downcase }}.mp4" type="video/mp4">
 										</video>
