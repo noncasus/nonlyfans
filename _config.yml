@@ -22,6 +22,7 @@ clip_path: "video/"
 
 # Build settings
 markdown: kramdown
+incremental: true
 include: ["_pages"]
 collections:
   streamers:
