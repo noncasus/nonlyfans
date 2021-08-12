@@ -162,13 +162,15 @@ h2{
   margin: 1rem 0 2.5rem 0;
 }
 .instagram-grid-wrapper,
-.other-social-wrapper{
+.other-social-wrapper,
+.other-links-wrapper{
   margin-top: 100px;
   margin-bottom: 100px;
 }
 .instagram-grid-title,
 .other-social,
-.contact{
+.contact,
+.other-links{
   text-align: center;
 }
 .other-social-element{
@@ -185,6 +187,7 @@ h2{
   text-shadow: -2px 1px 5px #000;
   -webkit-text-stroke: 2px #000;
 }
+
 footer{
   margin: 100px 0;
 }

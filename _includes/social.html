@@ -1,4 +1,4 @@
-{% if page.contact.instagram %}
+{% if page.instagram %}
 <div class="instagram-grid-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 		<h2 class="instagram-grid-title">Mi <span class="cursive">Instagram</span></h2>
@@ -8,27 +8,54 @@
 {% endif %}
 <div class="other-social-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-		{% if page.contact.instagram %}
+		{% if page.instagram %}
 		<h2 class="other-social">Mis Otras Redes <span class="cursive">Sociales</span></h2>
 		{% else %}
 		<h2 class="other-social">Mis Redes <span class="cursive">Sociales</span></h2>
 		{% endif %}
 
-		{% for contact in page.contact %}
+		<!-- Social Networks -->
+		{% for social_network in page.social_networks %}
 		{% assign remainder = forloop.index | modulo: 2 %}
 			{% if remainder == 1 or forloop.first == true %}
 		<div class="row">
 			{% endif %}
-			{% if contact[0] == 'instagram' %}
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row justify-content-center">
+					<div class="col-8 other-social-element" style="background-color: {{ page.color }}">
+						{% if social_network[0] == "email" %}
+						<a href="mailto:{{ social_network[1] }}">{{ social_network[0] }}</a>
+						{% else %}
+						<a href="{{ social_network[1] }}">{{ social_network[0] }}</a>
+						{% endif %}
+					</div>
+				</div>
+        	</div>
+        	
+			{% if remainder == 0 or forloop.last == true %}
+		</div>
+			{% endif %}
+		{% endfor %}
+</div>
+<div class="other-links-wrapper row justify-content-center">
+	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+		<h2 class="other-links">Otros <span class="cursive">Links</span></h2>
+		<!-- Other Links -->
+		{% for other_link in page.other_links %}
+		{% assign remainder = forloop.index | modulo: 2 %}
+			{% if remainder == 1 or forloop.first == true %}
+		<div class="row">
+			{% endif %}
+			{% if other_link[0] == 'instagram' %}
 			  {% continue %}
 			{% endif %}
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: {{ page.color }}">
-						{% if contact[0] == "email" %}
-						<a href="mailto:{{ contact[1] }}">{{ contact[0] }}</a>
+						{% if other_link[0] == "email" %}
+						<a href="mailto:{{ other_link[1] }}">{{ other_link[0] }}</a>
 						{% else %}
-						<a href="{{ contact[1] }}">{{ contact[0] }}</a>
+						<a href="{{ other_link[1] }}">{{ other_link[0] }}</a>
 						{% endif %}
 					</div>
 				</div>
@@ -38,4 +65,5 @@
 			{% endif %}
 		{% endfor %}
 	</div>
+</div>
 </div>
