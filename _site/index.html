@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel='shortcut icon' type='image/x-icon' href="/images/favicon.ico" /> -->
+  
+  <title>NonlyFans - Pure enjoyment</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  
+  <!-- <link rel="canonical" href="http://localhost:4000//"> -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="NonlyFans - Pure enjoyment" href="http://localhost:4000//feed.xml"> -->
+  <link rel="stylesheet" href="http://localhost:4000/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+</head>
+
+    <body>
+        <main>  
+            <div class="container-fluid">
+                <div class="row">
+  <div class="col-md-12">
+    <div class="logo"></div>
+  </div>
+</div>
+            
+                          
+        
+
+        
+        <div class="row grid-row">
+        
+      
+        <div class="col-md-4">
+          <a href="http://localhost:4000/streamer/lydiapudin_"><div class="grid-item" style="background-image: url( 'img/lydiapudin_.jpg'  );background-size:cover;"></div></a>
+        </div>
+
+        
+
+      
+        
+
+        
+      
+        <div class="col-md-4">
+          <a href="http://localhost:4000/streamer/kh_48"><div class="grid-item" style="background-image: url( 'img/kh_48.jpg'  );background-size:cover;"></div></a>
+        </div>
+
+        
+
+      
+        
+
+        
+      
+        <div class="col-md-4">
+          <a href="http://localhost:4000/streamer/prishka"><div class="grid-item" style="background-image: url( 'img/prishka.jpg'  );background-size:cover;"></div></a>
+        </div>
+
+        
+        </div>
+        
+
+      
+        
+
+        
+        <div class="row grid-row">
+        
+      
+        <div class="col-md-4">
+          <a href="http://localhost:4000/streamer/srwafol"><div class="grid-item" style="background-image: url( 'img/srwafol.jpg'  );background-size:cover;"></div></a>
+        </div>
+
+        
+        </div>
+        
+
+      
+            </div>
+    
+        <footer class="site-footer container-fluid">
+    <div class="contact-wrapper row justify-content-center">
+        <div class="contact col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+            <!-- <a class="cursive" href="http://localhost:4000/contact">Contacto</a> -->
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <script src="http://localhost:4000/js/jquery-3.6.0.min.js"></script>
+    <script src="http://localhost:4000/js/instagramfeed.js"></script>
+    <script>
+        (function(){
+            $(window).on('load', function(){
+                var username = ""; 
+                var myRegexp = /(?:(?:http|https):\/\/)?(?:www\.)?(?:instagram\.com|instagr\.am)\/([A-Za-z0-9-_\.]+)/im;
+                var match = myRegexp.exec(username);
+                // start modified instagram feed script
+                        $.instagramFeed({
+
+                            'username': match[1],
+                            'container': "#instagram-feed-demo",
+                            'display_profile': true,
+                            'display_biography': true,
+                            'display_gallery': true,
+                            'get_raw_json': false,
+                            'callback': null,
+                            'styling': true,
+                            'items': 36,
+                            'items_per_row': 6,
+                            'margin': 0.3
+                        });
+                    });
+
+            // placeholder for possible data from jekyll file to change background color based on streamer
+            // var streamer = $('.hero').attr('data-streamer');
+
+            $('.hero').css({
+                // 'background': 'linear-gradient(90deg, purple 75%, #e3e3e3 25%)'
+                background: ''
+            });
+
+            // get clip img element and remove opacity to allow video to show
+            $('.clip-link').hover( 
+                function() {
+                    $('.clip img').addClass('fadeOut');
+                    $('.clip video').css({
+                        opacity:1
+                    });
+
+                    $('.clip img').removeClass('fadeIn');
+                },
+                function() {
+                    $('.clip img').addClass('fadeIn');
+
+                    $('.clip img').removeClass('fadeOut');
+                });
+        })();
+    </script>
+</footer>
+        </main>
+    </body>
+
+</html>

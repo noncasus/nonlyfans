@@ -1,0 +1,41 @@
+{% if page.contact.instagram %}
+<div class="instagram-grid-wrapper row justify-content-center">
+	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+		<h2 class="instagram-grid-title">Mi <span class="cursive">Instagram</span></h2>
+		<div id="instagram-feed-demo" class="instagram_feed"></div>
+	</div>
+</div>
+{% endif %}
+<div class="other-social-wrapper row justify-content-center">
+	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+		{% if page.contact.instagram %}
+		<h2 class="other-social">Mis Otras Redes <span class="cursive">Sociales</span></h2>
+		{% else %}
+		<h2 class="other-social">Mis Redes <span class="cursive">Sociales</span></h2>
+		{% endif %}
+
+		{% for contact in page.contact %}
+		{% assign remainder = forloop.index | modulo: 2 %}
+			{% if remainder == 1 or forloop.first == true %}
+		<div class="row">
+			{% endif %}
+			{% if contact[0] == 'instagram' %}
+			  {% continue %}
+			{% endif %}
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row justify-content-center">
+					<div class="col-8 other-social-element" style="background-color: {{ page.color }}">
+						{% if contact[0] == "email" %}
+						<a href="mailto:{{ contact[1] }}">{{ contact[0] }}</a>
+						{% else %}
+						<a href="{{ contact[1] }}">{{ contact[0] }}</a>
+						{% endif %}
+					</div>
+				</div>
+        	</div>
+			{% if remainder == 0 or forloop.last == true %}
+		</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+      
+      {% for streamer in site.data.streamers %}
+        {% assign remainder = forloop.index | modulo: 3 %}
+
+        {% if remainder == 1 or forloop.first == true %}
+        <div class="row grid-row">
+        {% endif %}
+      
+        <div class="col-md-4">
+          <a href="{{site.url}}streamer/{{ streamer.name}}"><div class="grid-item" style="background-image: url( '{{site.image_path}}{{streamer.name}}.jpg'  );background-size:cover;"></div></a>
+        </div>
+
+        {% if remainder == 0 or forloop.last == true %}
+        </div>
+        {% endif %}
+
+      {% endfor %}
