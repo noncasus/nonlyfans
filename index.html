@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-      
-      {% for streamer in site.data.streamers %}
+      {% assign active_streamers = site.data.streamers | where: "active", 1 %}
+
+      {% for streamer in active_streamers %}
         {% assign remainder = forloop.index | modulo: 3 %}
 
         {% if remainder == 1 or forloop.first == true %}

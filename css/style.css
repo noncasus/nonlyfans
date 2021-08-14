@@ -91,7 +91,8 @@ video{
 }
 .streamer-profile-pic img{
   width: 100px;
-    margin-top: -40px;
+  margin-top: -40px;
+  background-color: #0E0E10;
 }
 .streamer-name{
   font-size: 5rem;
@@ -162,16 +163,22 @@ h2{
   margin: 1rem 0 2.5rem 0;
 }
 .instagram-grid-wrapper,
+.youtube-grid-wrapper,
 .other-social-wrapper,
 .other-links-wrapper{
   margin-top: 100px;
   margin-bottom: 100px;
 }
 .instagram-grid-title,
+.youtube-grid-title,
 .other-social,
 .contact,
 .other-links{
   text-align: center;
+}
+#youtube-wrapper div{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .other-social-element{
   text-align: center;

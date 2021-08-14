@@ -2,12 +2,13 @@
 name: SrWafol
 phrase: "Es que soy BUENISIMO!"
 color: "#ca5602"
-contact:
-  steam: "https://steamcommunity.com/profiles/76561198037578799/"
+social_networks:
   twitter: "https://twitter.com/SrWafol"
+other_links:
+  steam: "https://steamcommunity.com/profiles/76561198037578799/"
 ---
 <h2>Sobre <span class="cursive">Mi</span></h2>
-<p class="streamer-about">Mi nombre es josé tengo 22 años. . .soy de mexico, como es obvio me gustan los videojuegos suelo jugar de todo exceptuando juegos de carreras y deportes asi que eso no se vera en este canal o eso pienso.</p>
+<p class="streamer-about">Mi nombre es josé tengo 23 años. . .soy de mexico, como es obvio me gustan los videojuegos suelo jugar de todo exceptuando juegos de carreras y deportes asi que eso no se vera en este canal o eso pienso.</p>
 <p class="streamer-about">¿Por que SrWafol? La verdad es que queria llamarme SrWaffle pero ya estaba ocupado (que cosas no) por lo que decidi hacer el nombre lo mas cercano y eso fue lo que quedo :) Si llegaste hasta aqui leyendo este texto sobre mi wow te felicito supongo :D</p>
 
 <h2>Sobre <span class="cursive">Mi Canal</span></h2>

@@ -8,10 +8,11 @@
   <!-- <link rel='shortcut icon' type='image/x-icon' href="/images/favicon.ico" /> -->
   
   <title>NonlyFans - Pure enjoyment</title>
-  <meta name="description" content="Sobre MiMi nombre es josé tengo 22 años. . .soy de mexico, como es obvio me gustan los videojuegos suelo jugar de todo exceptuando juegos de carreras y depor...">
+  <meta name="description" content="Sobre MiMi nombre es josé tengo 23 años. . .soy de mexico, como es obvio me gustan los videojuegos suelo jugar de todo exceptuando juegos de carreras y depor...">
   
   <!-- <link rel="canonical" href="http://127.0.0.1:4000//streamer/srwafol/"> -->
   <!-- <link rel="alternate" type="application/rss+xml" title="NonlyFans - Pure enjoyment" href="http://127.0.0.1:4000//feed.xml"> -->
+  <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/style.css">
 </head>
@@ -61,7 +62,7 @@
 				<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 
 					<h2>Sobre <span class="cursive">Mi</span></h2>
-<p class="streamer-about">Mi nombre es josé tengo 22 años. . .soy de mexico, como es obvio me gustan los videojuegos suelo jugar de todo exceptuando juegos de carreras y deportes asi que eso no se vera en este canal o eso pienso.</p>
+<p class="streamer-about">Mi nombre es josé tengo 23 años. . .soy de mexico, como es obvio me gustan los videojuegos suelo jugar de todo exceptuando juegos de carreras y deportes asi que eso no se vera en este canal o eso pienso.</p>
 <p class="streamer-about">¿Por que SrWafol? La verdad es que queria llamarme SrWaffle pero ya estaba ocupado (que cosas no) por lo que decidi hacer el nombre lo mas cercano y eso fue lo que quedo :) Si llegaste hasta aqui leyendo este texto sobre mi wow te felicito supongo :D</p>
 
 <h2>Sobre <span class="cursive">Mi Canal</span></h2>
@@ -71,6 +72,7 @@
 				</div>
 			</div>
 			
+
 <div class="other-social-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 		
@@ -79,11 +81,41 @@
 
 		<!-- Social Networks -->
 		
+		
+			
+		<div class="row">
+			
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row justify-content-center">
+					<div class="col-8 other-social-element" style="background-color: #ca5602">
+						<a href="https://twitter.com/SrWafol" target="_blank">twitter</a>
+					</div>
+				</div>
+        	</div>
+			
+		</div>
+			
+		
 </div>
 <div class="other-links-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 		<h2 class="other-links">Otros <span class="cursive">Links</span></h2>
 		<!-- Other Links -->
+		
+		
+			
+		<div class="row">
+			
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="row justify-content-center">
+					<div class="col-8 other-social-element" style="background-color: #ca5602">
+						<a href="https://steamcommunity.com/profiles/76561198037578799/" target="_blank">steam</a>
+					</div>
+				</div>
+        	</div>
+			
+		</div>
+			
 		
 	</div>
 </div>
@@ -110,7 +142,7 @@
                         $.instagramFeed({
 
                             'username': match[1],
-                            'container': "#instagram-feed-demo",
+                            'container': "#instagram-feed",
                             'display_profile': true,
                             'display_biography': true,
                             'display_gallery': true,
@@ -123,11 +155,7 @@
                         });
                     });
 
-            // placeholder for possible data from jekyll file to change background color based on streamer
-            // var streamer = $('.hero').attr('data-streamer');
-
             $('.hero').css({
-                // 'background': 'linear-gradient(90deg, purple 75%, #e3e3e3 25%)'
                 background: '#ca5602'
             });
 
@@ -146,6 +174,20 @@
 
                     $('.clip img').removeClass('fadeOut');
                 });
+
+            // youtube videos
+            var channelID = "";
+            var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+            $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+                for (var i = 0; i <= 3; i++) {
+
+                    $("#youtube-wrapper").append('<div class="col-lg-3"><div class="ratio ratio-16x9"><iframe id="youtube_video_' + i + '"class="video-iframe" allowfullscreen></iframe></div></div>');
+
+                    var link = data.items[i].link;
+                    var id = link.substr(link.indexOf("=")+1);   
+                    $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
+                }
+            });
         })();
     </script>
 </footer>

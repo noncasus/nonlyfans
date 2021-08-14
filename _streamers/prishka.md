@@ -2,9 +2,9 @@
 name: Prishka
 phrase: "Ola de mar!"
 color: "#00c4c4"
-contact:
+instagram: "https://www.instagram.com/prishkapaprika"
+other_links:
   donaciones: "https://streamlabs.com/prishka/tip"
-  instagram: "https://www.instagram.com/prishkapaprika"
 ---
 <h2>Sobre <span class="cursive">Mi</span></h2>
 <p class="streamer-about">Yo soy Flor, vivo en México y me gustan mucho los videojuegos!</p>

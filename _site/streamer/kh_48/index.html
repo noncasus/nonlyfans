@@ -12,6 +12,7 @@
   
   <!-- <link rel="canonical" href="http://127.0.0.1:4000//streamer/kh_48/"> -->
   <!-- <link rel="alternate" type="application/rss+xml" title="NonlyFans - Pure enjoyment" href="http://127.0.0.1:4000//feed.xml"> -->
+  <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/style.css">
 </head>
@@ -73,9 +74,10 @@
 <div class="instagram-grid-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 		<h2 class="instagram-grid-title">Mi <span class="cursive">Instagram</span></h2>
-		<div id="instagram-feed-demo" class="instagram_feed"></div>
+		<div id="instagram-feed" class="instagram_feed"></div>
 	</div>
 </div>
+
 
 <div class="other-social-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
@@ -92,13 +94,10 @@
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
-						
-						<a href="https://www.twitter.com/kh_art48">twitter</a>
-						
+						<a href="https://www.twitter.com/kh_art48" target="_blank">twitter</a>
 					</div>
 				</div>
         	</div>
-        	
 			
 		
 		
@@ -106,13 +105,10 @@
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
-						
-						<a href="https://www.facebook.com/KHArt48">facebook</a>
-						
+						<a href="https://www.facebook.com/KHArt48" target="_blank">facebook</a>
 					</div>
 				</div>
         	</div>
-        	
 			
 		</div>
 			
@@ -124,13 +120,10 @@
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
-						
-						<a href="https://www.tiktok.com/@kh_art48">tiktok</a>
-						
+						<a href="https://www.tiktok.com/@kh_art48" target="_blank">tiktok</a>
 					</div>
 				</div>
         	</div>
-        	
 			
 		</div>
 			
@@ -145,13 +138,10 @@
 			
 		<div class="row">
 			
-			
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
-						
-						<a href="https://drive.google.com/file/d/1wEGQ0zE_O9iiSta-SbuB0YAZM7ERXxc_/view?usp=sharing">comisiones</a>
-						
+						<a href="https://drive.google.com/file/d/1wEGQ0zE_O9iiSta-SbuB0YAZM7ERXxc_/view?usp=sharing" target="_blank">comisiones</a>
 					</div>
 				</div>
         	</div>
@@ -159,13 +149,10 @@
 		
 		
 			
-			
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
-						
-						<a href="https://streamlabs.com/kh_48/tip">donaciones</a>
-						
+						<a href="https://streamlabs.com/kh_48/tip" target="_blank">donaciones</a>
 					</div>
 				</div>
         	</div>
@@ -198,7 +185,7 @@
                         $.instagramFeed({
 
                             'username': match[1],
-                            'container': "#instagram-feed-demo",
+                            'container': "#instagram-feed",
                             'display_profile': true,
                             'display_biography': true,
                             'display_gallery': true,
@@ -211,11 +198,7 @@
                         });
                     });
 
-            // placeholder for possible data from jekyll file to change background color based on streamer
-            // var streamer = $('.hero').attr('data-streamer');
-
             $('.hero').css({
-                // 'background': 'linear-gradient(90deg, purple 75%, #e3e3e3 25%)'
                 background: '#861749'
             });
 
@@ -234,6 +217,20 @@
 
                     $('.clip img').removeClass('fadeOut');
                 });
+
+            // youtube videos
+            var channelID = "";
+            var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+            $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+                for (var i = 0; i <= 3; i++) {
+
+                    $("#youtube-wrapper").append('<div class="col-lg-3"><div class="ratio ratio-16x9"><iframe id="youtube_video_' + i + '"class="video-iframe" allowfullscreen></iframe></div></div>');
+
+                    var link = data.items[i].link;
+                    var id = link.substr(link.indexOf("=")+1);   
+                    $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
+                }
+            });
         })();
     </script>
 </footer>

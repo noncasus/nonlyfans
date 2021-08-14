@@ -13,6 +13,7 @@
   
   <!-- <link rel="canonical" href="http://127.0.0.1:4000//"> -->
   <!-- <link rel="alternate" type="application/rss+xml" title="NonlyFans - Pure enjoyment" href="http://127.0.0.1:4000//feed.xml"> -->
+  <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/style.css">
 </head>
@@ -27,6 +28,8 @@
 </div>
             
                           
+
+      
         
 
         
@@ -75,6 +78,17 @@
         </div>
 
         
+
+      
+        
+
+        
+      
+        <div class="col-md-4">
+          <a href="http://127.0.0.1:4000/streamer/deiran_tv"><div class="grid-item" style="background-image: url( 'img/deiran_tv.jpg'  );background-size:cover;"></div></a>
+        </div>
+
+        
         </div>
         
 
@@ -101,7 +115,7 @@
                         $.instagramFeed({
 
                             'username': match[1],
-                            'container': "#instagram-feed-demo",
+                            'container': "#instagram-feed",
                             'display_profile': true,
                             'display_biography': true,
                             'display_gallery': true,
@@ -114,11 +128,7 @@
                         });
                     });
 
-            // placeholder for possible data from jekyll file to change background color based on streamer
-            // var streamer = $('.hero').attr('data-streamer');
-
             $('.hero').css({
-                // 'background': 'linear-gradient(90deg, purple 75%, #e3e3e3 25%)'
                 background: ''
             });
 
@@ -137,6 +147,20 @@
 
                     $('.clip img').removeClass('fadeOut');
                 });
+
+            // youtube videos
+            var channelID = "";
+            var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+            $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+                for (var i = 0; i <= 3; i++) {
+
+                    $("#youtube-wrapper").append('<div class="col-lg-3"><div class="ratio ratio-16x9"><iframe id="youtube_video_' + i + '"class="video-iframe" allowfullscreen></iframe></div></div>');
+
+                    var link = data.items[i].link;
+                    var id = link.substr(link.indexOf("=")+1);   
+                    $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
+                }
+            });
         })();
     </script>
 </footer>

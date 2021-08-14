@@ -2,7 +2,17 @@
 <div class="instagram-grid-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 		<h2 class="instagram-grid-title">Mi <span class="cursive">Instagram</span></h2>
-		<div id="instagram-feed-demo" class="instagram_feed"></div>
+		<div id="instagram-feed" class="instagram_feed"></div>
+	</div>
+</div>
+{% endif %}
+{% if page.youtube %}
+<div class="youtube-grid-wrapper row justify-content-center">
+	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+		<h2 class="youtube-grid-title">Mi <span class="cursive">Youtube</span></h2>
+		<div class="youtube-feed">
+			<div id="youtube-wrapper" class="row"></div>
+		</div>
 	</div>
 </div>
 {% endif %}
@@ -23,15 +33,10 @@
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: {{ page.color }}">
-						{% if social_network[0] == "email" %}
-						<a href="mailto:{{ social_network[1] }}">{{ social_network[0] }}</a>
-						{% else %}
-						<a href="{{ social_network[1] }}">{{ social_network[0] }}</a>
-						{% endif %}
+						<a href="{{ social_network[1] }}" target="_blank">{{ social_network[0] }}</a>
 					</div>
 				</div>
         	</div>
-        	
 			{% if remainder == 0 or forloop.last == true %}
 		</div>
 			{% endif %}
@@ -46,17 +51,10 @@
 			{% if remainder == 1 or forloop.first == true %}
 		<div class="row">
 			{% endif %}
-			{% if other_link[0] == 'instagram' %}
-			  {% continue %}
-			{% endif %}
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: {{ page.color }}">
-						{% if other_link[0] == "email" %}
-						<a href="mailto:{{ other_link[1] }}">{{ other_link[0] }}</a>
-						{% else %}
-						<a href="{{ other_link[1] }}">{{ other_link[0] }}</a>
-						{% endif %}
+						<a href="{{ other_link[1] }}" target="_blank">{{ other_link[0] | replace: "_", " "}}</a>
 					</div>
 				</div>
         	</div>
