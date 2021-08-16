@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel='shortcut icon' type='image/x-icon' href="/images/favicon.ico" /> -->
+  <link rel='shortcut icon' type='image/x-icon' href="img/favicon.ico" />
   
   <title>NonlyFans - Pure enjoyment</title>
   <meta name="description" content="Sobre MiHola, me llamo Deiran, y mi nombre real es Angel. Soy de Monterrey, asi que "ajua", carne asada, y todo eso. Hago streams miercoles y sabado 9:00pm h...">
@@ -39,7 +39,7 @@
 								</div>
 
 								<div class="clip col-xl-6 col-lg-10 col-md-12 col-sm-12">
-									<a class="clip-link" href="" target="_blank">
+									<a class="clip-link" href="https://www.twitch.tv/deiran_tv/clip/RudeBillowingShingleDogFace-jBdMRTnDIWzHCSQE" target="_blank">
 										<img src="http://127.0.0.1:4000/img/deiran_tv.jpg">
 										<video loop autoplay muted="muted">
 											<source src="http://127.0.0.1:4000/video/deiran_tv.mp4" type="video/mp4">
@@ -73,7 +73,7 @@
 			</div>
 			
 
-<div class="youtube-grid-wrapper row justify-content-center">
+<div id="youtube-container" class="youtube-grid-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 		<h2 class="youtube-grid-title">Mi <span class="cursive">Youtube</span></h2>
 		<div class="youtube-feed">
@@ -94,7 +94,7 @@
 			
 		<div class="row">
 			
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="twitter">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #FA2929">
 						<a href="https://twitter.com/Deiran_TV" target="_blank">twitter</a>
@@ -105,10 +105,25 @@
 		
 		
 			
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="facebook">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #FA2929">
 						<a href="https://www.facebook.com/DeiranTV/" target="_blank">facebook</a>
+					</div>
+				</div>
+        	</div>
+			
+		</div>
+			
+		
+		
+			
+		<div class="row">
+			
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="youtube">
+				<div class="row justify-content-center">
+					<div class="col-8 other-social-element" style="background-color: #FA2929">
+						<a href="https://www.youtube.com/user/Deiran" target="_blank">youtube</a>
 					</div>
 				</div>
         	</div>
@@ -233,6 +248,12 @@
                     var id = link.substr(link.indexOf("=")+1);   
                     $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
                 }
+            })
+            .fail(function(){
+                $('#youtube-container').remove();
+                $('[data-other-social=youtube]').css({ 
+                    opacity:1
+                })
             });
         })();
     </script>

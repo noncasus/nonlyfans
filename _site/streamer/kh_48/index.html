@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel='shortcut icon' type='image/x-icon' href="/images/favicon.ico" /> -->
+  <link rel='shortcut icon' type='image/x-icon' href="img/favicon.ico" />
   
   <title>NonlyFans - Pure enjoyment</title>
   <meta name="description" content="Sobre MiSoy una aprendiz de artista, me gusta compartir mis dibujos y divertirme. ">
@@ -91,7 +91,7 @@
 			
 		<div class="row">
 			
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="twitter">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
 						<a href="https://www.twitter.com/kh_art48" target="_blank">twitter</a>
@@ -102,7 +102,7 @@
 		
 		
 			
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="facebook">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
 						<a href="https://www.facebook.com/KHArt48" target="_blank">facebook</a>
@@ -117,7 +117,7 @@
 			
 		<div class="row">
 			
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="tiktok">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #861749">
 						<a href="https://www.tiktok.com/@kh_art48" target="_blank">tiktok</a>
@@ -230,6 +230,12 @@
                     var id = link.substr(link.indexOf("=")+1);   
                     $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
                 }
+            })
+            .fail(function(){
+                $('#youtube-container').remove();
+                $('[data-other-social=youtube]').css({ 
+                    opacity:1
+                })
             });
         })();
     </script>

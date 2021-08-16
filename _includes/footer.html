@@ -63,6 +63,12 @@
                     var id = link.substr(link.indexOf("=")+1);   
                     $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
                 }
+            })
+            .fail(function(){
+                $('#youtube-container').remove();
+                $('[data-other-social=youtube]').css({ 
+                    opacity:1
+                })
             });
         })();
     </script>

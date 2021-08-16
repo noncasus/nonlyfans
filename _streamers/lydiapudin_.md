@@ -2,12 +2,15 @@
 name: LydiaPudin_
 phrase: "Digales que coman tierra"
 color: "purple"
+clip: "https://www.twitch.tv/lydiapudin_/clip/TemperedObliqueRatPeteZaroll-gVGNYh8IMvC0arEy"
 instagram: "https://www.instagram.com/lydiapudin"
 social_networks:
   twitter: "https://twitter.com/LydiaPudin"
   tiktok: "https://www.tiktok.com/@lydiapudin"
+  facebook: "https://www.facebook.com/LydiaPudin"
 other_links:
   donaciones: "https://streamelements.com/lydiapudin_/tip"
+  amazon_wishlist: "https://www.amazon.com.mx/hz/wishlist/ls/2H42CKY7FEB4X?ref_=wl_share"
 ---
 <h2>Sobre <span class="cursive">Mi</span></h2>
 <p class="streamer-about">¡Hola, soy Pudin! Hay pocas cosas que me apasionan y una de ellas son los videojuegos, me encanta sumergirme en mundos ficticios y reflexionar sobre ellos. Mis géneros favoritos son los Action RPG y los Metroidvania y mis franquicias favoritas son Dark Souls, The Legend of Zelda, Hollow Knight, Pokemon y Resident Evil. Tengo una gatita llamada Meche que a veces hace aparición en los directos. Soy licenciada en Filosofía y trabajo en la parte administrativa de un posgrado.</p>

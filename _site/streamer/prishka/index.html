@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel='shortcut icon' type='image/x-icon' href="/images/favicon.ico" /> -->
+  <link rel='shortcut icon' type='image/x-icon' href="img/favicon.ico" />
   
   <title>NonlyFans - Pure enjoyment</title>
   <meta name="description" content="Sobre MiYo soy Flor, vivo en México y me gustan mucho los videojuegos!">
@@ -39,7 +39,7 @@
 								</div>
 
 								<div class="clip col-xl-6 col-lg-10 col-md-12 col-sm-12">
-									<a class="clip-link" href="" target="_blank">
+									<a class="clip-link" href="https://www.twitch.tv/prishka/clip/GenerousBrainyOysterStinkyCheese-4djxZFmBEB9TbGDG" target="_blank">
 										<img src="http://127.0.0.1:4000/img/prishka.jpg">
 										<video loop autoplay muted="muted">
 											<source src="http://127.0.0.1:4000/video/prishka.mp4" type="video/mp4">
@@ -178,6 +178,12 @@
                     var id = link.substr(link.indexOf("=")+1);   
                     $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
                 }
+            })
+            .fail(function(){
+                $('#youtube-container').remove();
+                $('[data-other-social=youtube]').css({ 
+                    opacity:1
+                })
             });
         })();
     </script>

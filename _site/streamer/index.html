@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel='shortcut icon' type='image/x-icon' href="/images/favicon.ico" /> -->
+  <link rel='shortcut icon' type='image/x-icon' href="img/favicon.ico" />
   
   <title>NonlyFans - Pure enjoyment</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
@@ -152,6 +152,12 @@
                     var id = link.substr(link.indexOf("=")+1);   
                     $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
                 }
+            })
+            .fail(function(){
+                $('#youtube-container').remove();
+                $('[data-other-social=youtube]').css({ 
+                    opacity:1
+                })
             });
         })();
     </script>

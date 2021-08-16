@@ -2,11 +2,13 @@
 name: Deiran_TV
 phrase: "Es al chile?"
 color: "#FA2929"
+clip: "https://www.twitch.tv/deiran_tv/clip/RudeBillowingShingleDogFace-jBdMRTnDIWzHCSQE"
 youtube: "https://www.youtube.com/user/Deiran"
 youtube_id: "UCv6yFttuX6Uuky-L8MwvVjA"
 social_networks:
   twitter: "https://twitter.com/Deiran_TV"
   facebook: "https://www.facebook.com/DeiranTV/"
+  youtube: "https://www.youtube.com/user/Deiran"
 other_links:
   xbox_live: "https://account.xbox.com/en-US/Profile?GamerTag=Deiran"
   donaciones: "https://twitch.streamlabs.com/deiran_tv"

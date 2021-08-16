@@ -194,6 +194,9 @@ h2{
   text-shadow: -2px 1px 5px #000;
   -webkit-text-stroke: 2px #000;
 }
+div[data-other-social="youtube"]{
+  opacity: 0;
+}
 
 footer{
   margin: 100px 0;

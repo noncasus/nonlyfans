@@ -2,6 +2,7 @@
 name: Prishka
 phrase: "Ola de mar!"
 color: "#00c4c4"
+clip: "https://www.twitch.tv/prishka/clip/GenerousBrainyOysterStinkyCheese-4djxZFmBEB9TbGDG"
 instagram: "https://www.instagram.com/prishkapaprika"
 other_links:
   donaciones: "https://streamlabs.com/prishka/tip"

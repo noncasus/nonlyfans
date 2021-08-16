@@ -2,6 +2,7 @@
 name: SrWafol
 phrase: "Es que soy BUENISIMO!"
 color: "#ca5602"
+clip: "https://www.twitch.tv/srwafol/clip/PlausibleDaintyPlumJebaited"
 social_networks:
   twitter: "https://twitter.com/SrWafol"
 other_links:
