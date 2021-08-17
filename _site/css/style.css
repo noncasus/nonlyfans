@@ -42,12 +42,14 @@ body{
 
 .logo{
   background-image: url('../img/nonly-fans.svg');
-  background-size: 50%;
+  background-size: 100%;
   width: 100%;
   height: 250px;
   padding: 0;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0 auto;
+  display: block;
 }
 img,
 video{
@@ -65,7 +67,9 @@ video{
 
 .grid-item{
   width: 100%;
-  height: 342px;
+  /*height: 342px;*/
+  /*height: 258px;*/
+  aspect-ratio: 16/9;
 }
 .hero-wrapper{
   margin-top: 75px;
@@ -208,6 +212,11 @@ No media query since this is the default in Bootstrap*/
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .logo{
+    background-image: url('../img/nonly-fans.svg');
+    background-size: 100%;
+    width: 100%;
+  }
   .hero{
     perspective: 2000px;
     perspective-origin: 300px 0;
@@ -237,6 +246,11 @@ No media query since this is the default in Bootstrap*/
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .logo{
+    background-image: url('../img/nonly-fans.svg');
+    background-size: 100%;
+    width: 100%;
+  }
   .hero{
     perspective: 2000px;
     perspective-origin: 400px 0px;
@@ -250,6 +264,11 @@ No media query since this is the default in Bootstrap*/
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  .logo{
+    background-image: url('../img/nonly-fans.svg');
+    background-size: 100%;
+    width: 50%;
+  }
   
 }
 
