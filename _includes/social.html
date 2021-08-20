@@ -18,7 +18,9 @@
 {% endif %}
 <div class="other-social-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-		{% if page.instagram %}
+		{% if page.social_networks == nil %}
+		
+		{% elsif page.instagram %}
 		<h2 class="other-social">Mis Otras Redes <span class="cursive">Sociales</span></h2>
 		{% else %}
 		<h2 class="other-social">Mis Redes <span class="cursive">Sociales</span></h2>

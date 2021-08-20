@@ -141,7 +141,7 @@ video{
     position: relative;
 }
 .clip video{
-  display: none;
+  /*display: none;*/
 
 }
 .clip img{
@@ -166,6 +166,27 @@ h2{
   line-height: 32px;
   margin: 1rem 0 2.5rem 0;
 }
+.streamer-emotes{
+  padding: 0;
+}
+.streamer-emotes li{
+  list-style: none;
+}
+.streamer-emotes li img{
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin: 0 auto;
+}
+.streamer-emotes span{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+  /*.image-gallery {overflow: auto; margin-left: -1%!important;}
+  .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}*/
+
 .instagram-grid-wrapper,
 .youtube-grid-wrapper,
 .other-social-wrapper,
@@ -207,8 +228,34 @@ footer{
 }
 
 /**************************************************************************************************/
-/*Extra small devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap*/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+  .hero{
+    perspective: 2000px;
+    perspective-origin: 48vw 0;
+    padding-bottom: 20px;
+  }
+  .streamer-name{
+    font-size: 4rem;
+  }
+  .streamer-phrase{
+    font-size: 1.2rem;
+  }
+  .other-social-element{
+    font-size: 34px;
+  }
+  .clip-link video{
+    top: 0;
+  }
+  .clip-link,
+  .clip img{
+    position: relative;
+  }
+  
+  .clip video{
+    position: absolute;
+  }
+}
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -219,27 +266,31 @@ No media query since this is the default in Bootstrap*/
   }
   .hero{
     perspective: 2000px;
-    perspective-origin: 300px 0;
-
+    perspective-origin: 48vw 0;
+    padding-bottom: 20px;
   }
   .clip-link{
     transform: rotate3d(-1, 0, 0, -45deg);
     display: block;
+    position: relative;
+    width: 100%;
+    display: block;
   }
-  .clip-link,
   .clip img,
   .clip video{
     margin: 0;
-    position: relative;
     width: 100%;
   }
   .clip img{
     z-index:999;
     display: block;
+    position: relative;
   }
   .clip video{
     z-index: 1;
-    display: none;
+    top: 0;
+    position: absolute;
+    /*display: none;*/
   }
 
 }
@@ -252,8 +303,8 @@ No media query since this is the default in Bootstrap*/
     width: 100%;
   }
   .hero{
-    perspective: 2000px;
-    perspective-origin: 400px 0px;
+    /*perspective: 2000px;
+    perspective-origin: 400px 0px;*/
   }
   .streamer-name{
     font-size: 7rem;
@@ -283,24 +334,25 @@ No media query since this is the default in Bootstrap*/
     font-size: 6rem;
   }
   .clip-link{
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     display: block;
     margin-left: -45px;
     margin-top: 45px;
     transform: rotate3d(0,1,0, -45deg);
   }
-  .clip img,
-  .clip video{
-    position: absolute;
-  }
   .clip img{
     z-index:999;
+    position: relative;
   }
   .clip video{
     z-index:1;
-    /*display: block;*/
-    /*opacity: 0;*/
+    display: block;
+  }
+  .clip-link,
+  .clip img,
+  .clip video{
+    position: absolute;
   }
 }
 

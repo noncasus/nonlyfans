@@ -3,6 +3,7 @@ name: LydiaPudin_
 phrase: "Digales que coman tierra"
 color: "purple"
 clip: "https://www.twitch.tv/lydiapudin_/clip/TemperedObliqueRatPeteZaroll-gVGNYh8IMvC0arEy"
+allow_emotes: 1
 instagram: "https://www.instagram.com/lydiapudin"
 social_networks:
   twitter: "https://twitter.com/LydiaPudin"

@@ -3,6 +3,7 @@ name: KuskaMerlina
 phrase: "Changos!"
 color: "#2b1b45"
 clip: "https://www.twitch.tv/kuskamerlina/clip/StrongAgitatedBaboonLitFam-i9sV_u8Rv7Wfp4af"
+allow_emotes: 1
 twitch: "https://www.twitch.tv/kuskamerlina"
 instagram: "https://www.instagram.com/kuskamerlina_10/"
 social_networks:

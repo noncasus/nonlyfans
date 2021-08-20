@@ -3,6 +3,7 @@ name: 97zavala
 phrase: "Khe kheeee?"
 color: "#53535f"
 clip: "https://www.twitch.tv/97zavala/clip/ClumsyEasyButterflyTooSpicy-4AYeMfZoG_uak0K4"
+allow_emotes: 1
 youtube: "https://www.youtube.com/user/97zavala/"
 youtube_id: "UCsvLFh8F5lHKNALgOSRCBag"
 social_networks:

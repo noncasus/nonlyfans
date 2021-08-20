@@ -1,0 +1,13 @@
+<ul class="streamer-emotes row">
+    {% for file in site.static_files %}
+        {% if file.path contains include.folder %}
+            {% if file.extname == '.png' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
+                {% assign filenameparts = file.path | split: "/" %}
+                {% assign filename = filenameparts | last | replace: file.extname,"" %}
+                <li class="col">
+                    <img src="{{ file.path | relative_url }}" alt="{{ filename }}" title="{{ filename }}" /><span>{{ filename }}</span>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</ul>
