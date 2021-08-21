@@ -6,9 +6,10 @@ clip: "https://www.twitch.tv/1upgamingmx/clip/AthleticGoodPoultryWow-ZZgdFmxaCqU
 allow_emotes: 1
 instagram: "https://www.instagram.com/1UpGamingMX"
 youtube: "https://www.youtube.com/channel/UCyvlkKadKecM4BdxxyeK9mA"
-youtube_id: ""
+youtube_id: "UCyvlkKadKecM4BdxxyeK9mA"
+twitter_description: "Equipo de 1Up Gaming. De México para el mundo. stream de moda, stream de variedad, llevele va calado! Checa nuestro demás contenido en nuestras redes sociales"
 social_networks:
-  twitter: "https://twitter.com/1UpGamingMX"
+  twitter: "1UpGamingMX"
   facebook: "https://www.facebook.com/1UpGamingMX"
 other_links:
   discord: "https://discord.gg/KwNnnGx4"

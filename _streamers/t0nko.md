@@ -4,6 +4,7 @@ phrase: "Como estas? Como te sientes? :D"
 color: "#18181B"
 clip: "https://www.twitch.tv/t0nko/clip/FitTentativeManateeNerfBlueBlaster"
 allow_emotes: 1
+twitter_description: "¡Unete al clan ninja, prepara tu armamento y sigue el camino de Zen!"
 other_links:
   donaciones: "https://twitch.streamlabs.com/t0nko"
 ---

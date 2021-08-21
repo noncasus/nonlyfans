@@ -5,8 +5,9 @@ color: "purple"
 clip: "https://www.twitch.tv/lydiapudin_/clip/TemperedObliqueRatPeteZaroll-gVGNYh8IMvC0arEy"
 allow_emotes: 1
 instagram: "https://www.instagram.com/lydiapudin"
+twitter_description: "Si te gusta platicar, escuchar cosas random y ver juegos de ayer y hoy, este canal te va a gustar garantizado"
 social_networks:
-  twitter: "https://twitter.com/LydiaPudin"
+  twitter: "LydiaPudin"
   tiktok: "https://www.tiktok.com/@lydiapudin"
   facebook: "https://www.facebook.com/LydiaPudin"
 other_links:

@@ -6,8 +6,9 @@ clip: "https://www.twitch.tv/97zavala/clip/ClumsyEasyButterflyTooSpicy-4AYeMfZoG
 allow_emotes: 1
 youtube: "https://www.youtube.com/user/97zavala/"
 youtube_id: "UCsvLFh8F5lHKNALgOSRCBag"
+twitter_description: "Un wey random jugando random, streams cada que los planetas se alinean"
 social_networks:
-  twitter: "https://twitter.com/DANNY_GAMER97"
+  twitter: "DANNY_GAMER97"
   facebook: "https://goo.gl/dTJMxr"
   youtube: "https://www.youtube.com/user/97zavala/"
 other_links:

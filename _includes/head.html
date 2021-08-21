@@ -6,9 +6,29 @@
   
   <title>{{site.title}}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="twitter:card" content="summary" />
+  {% if page.url == "/" %}
+  <meta name="twitter:site" content="@noncasus" />
+  {% else %}
+  <meta name="twitter:site" content="@{{ page.social_networks.twitter }}" />
+  {% endif %}
+  <meta name="twitter:creator" content="@noncasus" />
+
+  {% if page.url == "/" %}
+  <meta property="og:url" content="https://www.nonlyfans.tv/" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="{{ site.url }}img/nonly-fans.svg" />
+  {% else %}
+  <meta property="og:url" content="{{ site.url }}{{ page.name }}" />
+  <meta property="og:title" content="{{ page.name }}" />
+  <meta property="og:description" content="{{ page.twitter_description }}" />
+  <meta property="og:image" content="{{ site.image_path | prepend: site.url }}{{ page.name | downcase}}-profile.png" />
+  {% endif %}
   
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
   <link rel="stylesheet" href="{{ "css/bootstrap-reboot.min.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "css/style.css" | prepend: site.url }}">

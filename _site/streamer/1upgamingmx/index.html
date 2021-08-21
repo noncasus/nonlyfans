@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
     <head>
   <meta charset="utf-8">
@@ -7,11 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='shortcut icon' type='image/x-icon' href="http://127.0.0.1:4000/img/favicon.ico" />
   
-  <title>NonlyFans - Pure enjoyment</title>
+  <title>NonlyFans.tv - Pure enjoyment</title>
   <meta name="description" content="Sobre NosotrosEquipo de 1Up Gaming. De México para el mundo. stream de moda, stream de variedad, llevele va calado! Checa nuestro demás contenido en nuestras...">
+
+  <meta name="twitter:card" content="summary" />
   
-  <!-- <link rel="canonical" href="http://127.0.0.1:4000//streamer/1upgamingmx/"> -->
-  <!-- <link rel="alternate" type="application/rss+xml" title="NonlyFans - Pure enjoyment" href="http://127.0.0.1:4000//feed.xml"> -->
+  <meta name="twitter:site" content="@1UpGamingMX" />
+  
+  <meta name="twitter:creator" content="@noncasus" />
+
+  
+  <meta property="og:url" content="http://127.0.0.1:4000/1UpGamingMx" />
+  <meta property="og:title" content="1UpGamingMx" />
+  <meta property="og:description" content="Equipo de 1Up Gaming. De México para el mundo. stream de moda, stream de variedad, llevele va calado! Checa nuestro demás contenido en nuestras redes sociales" />
+  <meta property="og:image" content="http://127.0.0.1:4000/img/1upgamingmx-profile.png" />
+  
+  
+  <link rel="canonical" href="http://127.0.0.1:4000//streamer/1upgamingmx/">
+  <!-- <link rel="alternate" type="application/rss+xml" title="NonlyFans.tv - Pure enjoyment" href="http://127.0.0.1:4000//feed.xml"> -->
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://127.0.0.1:4000/css/style.css">
@@ -321,7 +334,9 @@
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="twitter">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #A9056D">
+						
 						<a href="https://twitter.com/1UpGamingMX" target="_blank">twitter</a>
+						
 					</div>
 				</div>
         	</div>
@@ -332,7 +347,9 @@
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-other-social="facebook">
 				<div class="row justify-content-center">
 					<div class="col-8 other-social-element" style="background-color: #A9056D">
+						
 						<a href="https://www.facebook.com/1UpGamingMX" target="_blank">facebook</a>
+						
 					</div>
 				</div>
         	</div>
@@ -420,7 +437,7 @@
                 });
 
             // youtube videos
-            var channelID = "";
+            var channelID = "UCyvlkKadKecM4BdxxyeK9mA";
             var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
             $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
                 for (var i = 0; i <= 3; i++) {

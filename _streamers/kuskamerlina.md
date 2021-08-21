@@ -6,8 +6,9 @@ clip: "https://www.twitch.tv/kuskamerlina/clip/StrongAgitatedBaboonLitFam-i9sV_u
 allow_emotes: 1
 twitch: "https://www.twitch.tv/kuskamerlina"
 instagram: "https://www.instagram.com/kuskamerlina_10/"
+twitter_description: "Bogotá - Polombia. Me gustan los juegos clásicos como RE, Dinocrisis, retro. Amante de los animes viejos y los animales"
 social_networks:
-  twitter: "https://twitter.com/KuskaMerlina"
+  twitter: "KuskaMerlina"
 other_links:
   discord: "https://discord.gg/AHycxW83c6"
 ---
