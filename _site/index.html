@@ -8,6 +8,7 @@
   <link rel='shortcut icon' type='image/x-icon' href="http://127.0.0.1:4000/img/favicon.ico" />
   
   <title>NonlyFans.tv - Pure enjoyment</title>
+  
   <meta name="description" content="Aqui encontraras twitch streamers (de variedad) y sus comunidades de excelente calidad. POG!
 ">
 
@@ -22,7 +23,7 @@
   <meta property="og:title" content="NonlyFans.tv - Pure enjoyment" />
   <meta property="og:description" content="Aqui encontraras twitch streamers (de variedad) y sus comunidades de excelente calidad. POG!
 " />
-  <meta property="og:image" content="http://127.0.0.1:4000/img/nonly-fans.svg" />
+  <meta property="og:image" content="http://127.0.0.1:4000/img/nonlyfans_twitter.png" />
   
   
   <link rel="canonical" href="http://127.0.0.1:4000//">
@@ -81,70 +82,7 @@
     <script src="http://127.0.0.1:4000/js/bootstrap.min.js"></script>
     <script src="http://127.0.0.1:4000/js/jquery-3.6.0.min.js"></script>
     <script src="http://127.0.0.1:4000/js/instagramFeed.js"></script>
-    <script>
-        (function(){
-            $(window).on('load', function(){
-                var username = ""; 
-                var myRegexp = /(?:(?:http|https):\/\/)?(?:www\.)?(?:instagram\.com|instagr\.am)\/([A-Za-z0-9-_\.]+)/im;
-                var match = myRegexp.exec(username);
-                // start modified instagram feed script
-                        $.instagramFeed({
-
-                            'username': match[1],
-                            'container': "#instagram-feed",
-                            'display_profile': true,
-                            'display_biography': true,
-                            'display_gallery': true,
-                            'get_raw_json': false,
-                            'callback': null,
-                            'styling': true,
-                            'items': 36,
-                            'items_per_row': 6,
-                            'margin': 0.3
-                        });
-                    });
-
-            $('.hero').css({
-                background: ''
-            });
-
-            // get clip img element and remove opacity to allow video to show
-            $('.clip-link').hover( 
-                function() {
-                    $('.clip img').addClass('fadeOut');
-                    $('.clip video').css({
-                        opacity:1
-                    });
-
-                    $('.clip img').removeClass('fadeIn');
-                },
-                function() {
-                    $('.clip img').addClass('fadeIn');
-
-                    $('.clip img').removeClass('fadeOut');
-                });
-
-            // youtube videos
-            var channelID = "";
-            var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-            $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
-                for (var i = 0; i <= 3; i++) {
-
-                    $("#youtube-wrapper").append('<div class="col-lg-3"><div class="ratio ratio-16x9"><iframe id="youtube_video_' + i + '"class="video-iframe" allowfullscreen></iframe></div></div>');
-
-                    var link = data.items[i].link;
-                    var id = link.substr(link.indexOf("=")+1);   
-                    $("#youtube_video_" + i).attr("src","https://youtube.com/embed/"+ id + "?controls=0&showinfo=0&rel=0");
-                }
-            })
-            .fail(function(){
-                $('#youtube-container').remove();
-                $('[data-other-social=youtube]').css({ 
-                    opacity:1
-                })
-            });
-        })();
-    </script>
+    
 </footer>
         </main>
     </body>
