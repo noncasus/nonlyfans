@@ -2,6 +2,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign non_active_streamers = site.data.streamers | where: "active", 0 %}
+
+
+  {% assign streamer_name = page.name | downcase %}
+
+  {% for streamer in non_active_streamers %}
+    {% if streamer.name contains streamer_name %}
+      {% assign active = 0 %}
+    {% endif%}
+  {% endfor %}
+
+  {% if active == 0 %}
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Refresh" content="0; URL={{ site.url }}">
+  {% endif %}
   <link rel='shortcut icon' type='image/x-icon' href="{{"img/favicon.ico" | prepend: site.url}}" />
   {% if page.url == "/" %}
   <title>{{site.title}}</title>

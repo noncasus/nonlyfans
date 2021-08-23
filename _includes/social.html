@@ -1,7 +1,11 @@
 {% if page.instagram %}
 <div class="instagram-grid-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+		{% if page.name == "1UpGamingMx" %}
+		<h2 class="instagram-grid-title">Nuestro <span class="cursive">Instagram</span></h2>
+		{% else %}
 		<h2 class="instagram-grid-title">Mi <span class="cursive">Instagram</span></h2>
+		{% endif %}
 		<div id="instagram-feed" class="instagram_feed"></div>
 	</div>
 </div>
@@ -9,7 +13,11 @@
 {% if page.youtube %}
 <div id="youtube-container" class="youtube-grid-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+		{% if page.name == "1UpGamingMx" %}
+		<h2 class="youtube-grid-title">Nuestro <span class="cursive">Youtube</span></h2>
+		{% else %}
 		<h2 class="youtube-grid-title">Mi <span class="cursive">Youtube</span></h2>
+		{% endif %}
 		<div class="youtube-feed">
 			<div id="youtube-wrapper" class="row"></div>
 		</div>
@@ -19,11 +27,23 @@
 <div class="other-social-wrapper row justify-content-center">
 	<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 		{% if page.social_networks == nil %}
+
+		{% elsif page.instagram and page.name == "1UpGamingMx" %}
+
+		<h2 class="other-social">Nuestras Otras Redes <span class="cursive">Sociales</span></h2>
 		
+		{% elsif page.instagram == nil and page.name == "1UpGamingMx" %}
+
+		<h2 class="other-social">Nuestras Redes <span class="cursive">Sociales</span></h2>
+
 		{% elsif page.instagram %}
+
 		<h2 class="other-social">Mis Otras Redes <span class="cursive">Sociales</span></h2>
+
 		{% else %}
+
 		<h2 class="other-social">Mis Redes <span class="cursive">Sociales</span></h2>
+
 		{% endif %}
 
 		<!-- Social Networks -->

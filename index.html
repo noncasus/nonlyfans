@@ -5,7 +5,9 @@ layout: default
       <div class="grid-row row row-cols-1 row-cols-lg-2 row-cols-xl-3 gy-4">
       {% for streamer in active_streamers %}      
         <div class="col">
-          <a href="{{site.url}}streamer/{{ streamer.name}}"><div class="grid-item" style="background-image: url( '{{site.image_path}}{{streamer.name}}.jpg'  );background-size:cover;"></div></a>
+          <a href="{{site.url}}streamer/{{ streamer.name}}">
+            <div class="grid-item" style="background-image: url( '{{site.image_path}}{{streamer.name}}.jpg'  );background-size:cover;"></div>
+          </a>
         </div>
       {% endfor %}
       </div>
