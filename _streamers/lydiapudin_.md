@@ -6,6 +6,7 @@ clip: "https://www.twitch.tv/lydiapudin_/clip/TemperedObliqueRatPeteZaroll-gVGNY
 allow_emotes: 1
 instagram: "https://www.instagram.com/lydiapudin"
 twitter_description: "Si te gusta platicar, escuchar cosas random y ver juegos de ayer y hoy, este canal te va a gustar garantizado"
+twitch: "https://www.twitch.tv/lydiapudin_/"
 social_networks:
   twitter: "LydiaPudin"
   tiktok: "https://www.tiktok.com/@lydiapudin"

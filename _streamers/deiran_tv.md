@@ -7,6 +7,7 @@ allow_emotes: 1
 youtube: "https://www.youtube.com/user/Deiran"
 youtube_id: "UCv6yFttuX6Uuky-L8MwvVjA"
 twitter_description: "En este stream se van a topar un poco de todo- no hay un juego en particular que me guste jugar todo el tiempo ni nada. Cualquier duda preguntenme!! Me gusta mucho hablar con la raza en el chat =)"
+twitch: "https://www.twitch.tv/deiran_tv/"
 social_networks:
   twitter: "Deiran_TV"
   facebook: "https://www.facebook.com/DeiranTV/"

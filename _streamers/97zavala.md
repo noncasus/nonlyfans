@@ -7,6 +7,7 @@ allow_emotes: 1
 youtube: "https://www.youtube.com/user/97zavala/"
 youtube_id: "UCsvLFh8F5lHKNALgOSRCBag"
 twitter_description: "Un wey random jugando random, streams cada que los planetas se alinean"
+twitch: "https://www.twitch.tv/97zavala/"
 social_networks:
   twitter: "DANNY_GAMER97"
   facebook: "https://goo.gl/dTJMxr"

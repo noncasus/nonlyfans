@@ -1,9 +1,11 @@
 ---
 name: 1UpGamingMx
+group: 1
 phrase: "Una frase aqui"
 color: "#A9056D"
 clip: "https://www.twitch.tv/1upgamingmx/clip/AthleticGoodPoultryWow-ZZgdFmxaCqUSf5-E"
 allow_emotes: 1
+twitch: "https://www.twitch.tv/1upgamingmx/"
 instagram: "https://www.instagram.com/1UpGamingMX"
 youtube: "https://www.youtube.com/channel/UCyvlkKadKecM4BdxxyeK9mA"
 youtube_id: "UCyvlkKadKecM4BdxxyeK9mA"

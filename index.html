@@ -2,11 +2,16 @@
 layout: default
 ---
       {% assign active_streamers = site.data.streamers | where: "active", 1 %}
+      <h1 class="homepage-streamers">Streamers</h1>
       <div class="grid-row row row-cols-1 row-cols-lg-2 row-cols-xl-3 gy-4">
       {% for streamer in active_streamers %}      
         <div class="col">
           <a href="{{site.url}}streamer/{{ streamer.name}}">
-            <div class="grid-item" style="background-image: url( '{{site.image_path}}{{streamer.name}}.jpg'  );background-size:cover;"></div>
+            <div class="grid-item" style="background-image: url( '{{site.image_path}}{{streamer.name}}.jpg'  );background-size:cover;">
+              <div class="name-wrapper">
+                <h2>{{ streamer.name }}</h2>
+              </div>
+            </div>
           </a>
         </div>
       {% endfor %}

@@ -5,6 +5,7 @@ color: "#00c4c4"
 clip: "https://www.twitch.tv/prishka/clip/GenerousBrainyOysterStinkyCheese-4djxZFmBEB9TbGDG"
 allow_emotes: 1
 twitter_description: "Yo soy Flor, vivo en México y me gustan mucho los videojuegos!"
+twitch: "https://www.twitch.tv/prishka/"
 instagram: "https://www.instagram.com/prishkapaprika"
 other_links:
   donaciones: "https://streamlabs.com/prishka/tip"

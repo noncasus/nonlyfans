@@ -5,6 +5,7 @@ color: "#ca5602"
 clip: "https://www.twitch.tv/srwafol/clip/PlausibleDaintyPlumJebaited"
 allow_emotes: 1
 twitter_description: "Mi nombre es José tengo 23 años. . .soy de mexico, como es obvio me gustan los videojuegos suelo jugar de todo exceptuando juegos de carreras y deportes asi que eso no se vera en este canal o eso pienso."
+twitch: "https://www.twitch.tv/srwafol/"
 social_networks:
   twitter: "SrWafol"
 other_links:

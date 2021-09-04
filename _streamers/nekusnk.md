@@ -5,6 +5,7 @@ color: "#FA1ED2"
 clip: "https://www.twitch.tv/nekusnk/clip/BoxyHumbleMeerkatArgieB8"
 allow_emotes: 0
 twitter_description: "Soy un periodista de videojuegos y por supuesto, amante de la industria. Me encanta lo retro y lo nuevo. Ven a divertirte con nosotros y cuéntame de tu día y de lo que te gusta"
+twitch: "https://www.twitch.tv/nekusnk/"
 social_networks:
   twitter: "NekuSNK"
   facebook: "https://www.facebook.com/NekuSNK"
