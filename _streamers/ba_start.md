@@ -1,7 +1,7 @@
 ---
 name: BA_Start
 group: 1
-phrase: "Una frase aqui"
+phrase: "Ah noo!"
 color: "#a970ff"
 clip: "https://www.twitch.tv/ba_start/clip/ZealousFriendlyManateeCorgiDerp"
 allow_emotes: 1

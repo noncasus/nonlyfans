@@ -1,6 +1,6 @@
 ---
 name: Daryu21
-phrase: "Frase Aqui"
+phrase: "Jejejeje"
 color: "#2b1b45"
 clip: "https://www.twitch.tv/daryu21/clip/TrustworthyCarelessAmazonPunchTrees"
 allow_emotes: 1

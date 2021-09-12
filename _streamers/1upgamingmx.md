@@ -1,7 +1,7 @@
 ---
 name: 1UpGamingMx
 group: 1
-phrase: "Una frase aqui"
+phrase: "Difunde la palabra Wanopera!"
 color: "#A9056D"
 clip: "https://www.twitch.tv/1upgamingmx/clip/AthleticGoodPoultryWow-ZZgdFmxaCqUSf5-E"
 allow_emotes: 1
@@ -15,6 +15,7 @@ social_networks:
   facebook: "https://www.facebook.com/1UpGamingMX"
 other_links:
   discord: "https://discord.gg/KwNnnGx4"
+  spotify: "https://open.spotify.com/show/2dO6VB4K2PGBLlJcXIucXY"
 ---
 <h2>Sobre <span class="cursive">Nosotros</span></h2>
 <p class="streamer-about">Equipo de 1Up Gaming. De México para el mundo. stream de moda, stream de variedad, llevele va calado! Checa nuestro demás contenido en nuestras redes sociales</p>
