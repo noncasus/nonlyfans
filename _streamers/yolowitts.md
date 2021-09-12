@@ -1,7 +1,7 @@
 ---
 name: Yolowitts
-phrase: "Frase Aqui"
-color: "#861749"
+phrase: "No es Jueves, no me mientan!"
+color: "#FF4300"
 clip: "https://www.twitch.tv/yolowitts/clip/ElegantInexpensiveKumquatBloodTrail"
 allow_emotes: 1
 twitch: "https://www.twitch.tv/yolowitts"

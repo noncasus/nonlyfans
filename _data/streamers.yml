@@ -7,7 +7,7 @@
 - name: srwafol
   active: 1
 - name: deiran_tv
-  active: 0
+  active: 1
 - name: 97zavala
   active: 1
 - name: kuskamerlina
@@ -16,8 +16,14 @@
   active: 1
 - name: ba_start
   active: 1
+- name: daryu21
+  active: 1
+- name: restrictedsbn
+  active: 1
+- name: eldritchsmoke
+  active: 1
 - name: yolowitts
-  active: 0
+  active: 1
 - name: mitvalk
   active: 0
 - name: t0nko

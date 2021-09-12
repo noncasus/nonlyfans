@@ -2,7 +2,7 @@
 name: Deiran_TV
 phrase: "Es al chile?"
 color: "#FA2929"
-clip: "https://www.twitch.tv/deiran_tv/clip/RudeBillowingShingleDogFace-jBdMRTnDIWzHCSQE"
+clip: "https://www.twitch.tv/deiran_tv/clip/HelpfulThoughtfulCurlewCoolCat-QCVPo8R5mTQztpue"
 allow_emotes: 1
 youtube: "https://www.youtube.com/user/Deiran"
 youtube_id: "UCv6yFttuX6Uuky-L8MwvVjA"
