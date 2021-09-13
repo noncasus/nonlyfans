@@ -93,11 +93,8 @@ video{
   margin-top: 75px;
 }
 .hero{
-  /*padding-bottom: 100px;
-  perspective: 2000px;
-  perspective-origin: 1000px 250px;*/
-  perspective: 2000px;
-  perspective-origin: 300px 0;
+  /*perspective: 2000px;
+  perspective-origin: 300px 0;*/
 }
 
 .hero img,
@@ -106,15 +103,20 @@ video{
   border: 5px solid #000;
   box-shadow: 20px 10px 15px rgba(0, 0, 0, .66);
 }
+.inner-hero{
+  perspective: 2000px;
+  perspective-origin: 1000px 250px;
+}
 .streamer-profile-pic{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.streamer-profile-pic img{
+.inner-hero .streamer-profile-pic img{
   width: 100px;
   margin-top: -40px;
   background-color: #0E0E10;
+  box-shadow: -15px 10px 15px rgba(0, 0, 0, .66);
 }
 .streamer-name{
   font-size: 5rem;
@@ -146,10 +148,11 @@ video{
 }
 .clip{
   position: relative;
+  transform: rotate3d(-1, 0, 0, -45deg);
 }
 .clip-link{
   position: absolute;
-  transform: rotate3d(-1, 0, 0, -45deg);
+  /*transform: rotate3d(-1, 0, 0, -45deg);*/
 }
 .clip-link,
 .clip img{
@@ -249,9 +252,11 @@ footer{
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
   .hero{
+    padding-bottom: 20px;
+  }
+  .inner-hero{
     perspective: 2000px;
     perspective-origin: 48vw 0;
-    padding-bottom: 20px;
   }
   .streamer-name{
     font-size: 4rem;
@@ -283,12 +288,16 @@ footer{
     width: 100%;
   }
   .hero{
-    perspective: 2000px;
-    perspective-origin: 48vw 0;
     padding-bottom: 20px;
   }
-  .clip-link{
+  .inner-hero{
+    perspective: 2000px;
+    perspective-origin: 48vw 0;
+  }
+  .clip{
     transform: rotate3d(-1, 0, 0, -45deg);
+  }
+  .clip-link{
     display: block;
     position: relative;
     width: 100%;
@@ -320,9 +329,9 @@ footer{
     background-size: 100%;
     width: 100%;
   }
-  .hero{
-    /*perspective: 2000px;
-    perspective-origin: 400px 0px;*/
+  .inner-hero{
+    perspective: 2000px;
+    perspective-origin: 400px 0px;
   }
   .streamer-name{
     font-size: 7rem;
@@ -345,11 +354,16 @@ footer{
 @media (min-width: 1200px) {
   .hero{
     padding-bottom: 75px;
+  }
+  .inner-hero{
     perspective: 1500px;
     perspective-origin: 500px 250px;
   }
   .streamer-name{
     font-size: 6rem;
+  }
+  .clip{
+    transform: rotate3d(0,1,0, -45deg);
   }
   .clip-link{
     /*position: absolute;*/
@@ -357,7 +371,6 @@ footer{
     display: block;
     margin-left: -45px;
     margin-top: 45px;
-    transform: rotate3d(0,1,0, -45deg);
   }
   .clip img{
     z-index:999;
@@ -377,8 +390,10 @@ footer{
 @media (min-width: 1350px) {
   .hero{
     padding-bottom: 75px;
-    perspective: 2000px;
+  }
+  .inner-hero{
     perspective-origin: 1000px 250px;
+    perspective: 2000px;
   }
   .streamer-name{
     font-size: 6rem;
@@ -397,9 +412,11 @@ footer{
 
 @media (min-width: 1600px) {
   .hero{
+    padding-bottom: 100px;
+  }
+  .inner-hero{
     perspective: 2000px;
     perspective-origin: 1000px 250px;
-    padding-bottom: 100px;
   }
   .clip img,
   .clip video{
