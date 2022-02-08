@@ -14,6 +14,7 @@ social_networks:
 other_links:
   artstation: "https://www.artstation.com/eldritchsmoke"
   donaciones: "https://www.paypal.com/paypalme/Eldritchsmoke?locale.x=es_XC"
+  trovo: "https://trovo.live/Eldritchsmoke"
 ---
 <h2>Sobre <span class="cursive">Mi</span></h2>
 <p class="streamer-about">Pues soy una persona amante de los gatos, los videojuegos y la música heavy metal. Me he recibido de ilustradora hace muy poco tiempo y me gustaría poder trabajar de ello. </p>
